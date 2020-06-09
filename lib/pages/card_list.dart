@@ -74,6 +74,15 @@ class _CardListPageState extends State<CardListPage> {
                                       color: Colors.white,
                                     )),
                           ),
+                          Positioned(
+                            bottom: 0,
+                            right: 0,
+                            child: Icon(
+                              Icons.play_arrow,
+                              size: SizeConfig.sizeMultiplier * 6,
+                              color: Colors.red,
+                            ),
+                          )
                         ],
                       ),
                     ),
