@@ -62,6 +62,7 @@ class DetialPage extends StatelessWidget {
             ),
             Positioned(
               child: GestureDetector(
+                onHorizontalDragStart: (_) => Navigator.pop(context),
                 onTap: () => Navigator.pop(context),
                 child: Container(
                   color: Colors.black.withOpacity(0.4),
