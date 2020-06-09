@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:happy_birthday/utils/screen_util.dart';
 
+import 'card_list.dart';
+
 class HomePage extends StatefulWidget {
   HomePage({Key key}) : super(key: key);
 
@@ -14,6 +16,8 @@ class _HomePageState extends State<HomePage> {
     return Scaffold(
       body: SafeArea(
         child: GestureDetector(
+          onTap: () => Navigator.push(
+              context, MaterialPageRoute(builder: (_) => CardListPage())),
           child: Stack(
             children: <Widget>[
               Container(
